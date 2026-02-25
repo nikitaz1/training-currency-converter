@@ -11,6 +11,7 @@ export default function PageFooter({ lastUpdated }: PageFooterProps) {
           Last updated: {new Date(lastUpdated).toLocaleString()}
         </p>
       )}
+      <p className="mt-1">&copy; TestCompany</p>
     </div>
   );
 }
