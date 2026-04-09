@@ -8,9 +8,12 @@ describe('PageFooter', () => {
   });
 
   it('should display the copyright notice', () => {
+    const currentYear = new Date().getFullYear();
     render(<PageFooter />);
     expect(
-      screen.getByText('© 2026 Godel Technologies. All rights reserved.')
+      screen.getByText(
+        new RegExp(`©\\s*${currentYear}\\s+Godel Technologies\\. All rights reserved\\.`)
+      )
     ).toBeInTheDocument();
   });
 

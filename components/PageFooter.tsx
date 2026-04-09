@@ -12,7 +12,7 @@ export default function PageFooter({ lastUpdated }: PageFooterProps) {
         </p>
       )}
       <p className="mt-4 text-gray-500">
-        &copy; 2026 Godel Technologies. All rights reserved.
+        &copy; {new Date().getFullYear()} Godel Technologies. All rights reserved.
       </p>
     </div>
   );
